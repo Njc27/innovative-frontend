@@ -50,6 +50,7 @@
 }
 
 .menu_options a{
+    cursor: pointer;
     color: var(--initial-palette-blue600);
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
@@ -58,7 +59,7 @@
     line-height: 150%; 
 }
 
-.menu_options nav a:link{
+.menu_options a:link{
     text-decoration: none;
 }
 
