@@ -1,0 +1,16 @@
+.body_container{
+    display: flex;
+    align-items: center;
+    margin: 0px 80px;
+}
+
+.body_text{
+    flex: 1 0 0;
+    color: var(--initial-palette-blue600);
+    text-align: justify;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    font-style: normal !important;
+    font-weight: 500;
+    line-height: 150%;
+}

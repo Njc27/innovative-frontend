@@ -1,24 +1,39 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Home from './Components/Home';
+import Header from './Components/Header/header';
+
+import React, {useEffect} from 'react'
+import { useSelector,useDispatch } from 'react-redux'
+import { getBlogData } from './redux/actions/blogAction';
+import Body from './Components/Body/body';
+import Footer from './Components/Footer/footer';
+import Nav from './Components/Nav/nav';
+
+
 
 function App() {
+  const dispatch = useDispatch();
+
+    const {blogData} = useSelector(state=>state.blog);
+    console.log(blogData);
+
+    useEffect(()=>{
+        dispatch(getBlogData());
+    },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Nav/>
+    <div className='main-body'>
+    <Header blogData={blogData}/>
+    <Body blogData={blogData}/>
     </div>
+        <Footer/>
+    </>
+
+
+    
+
   );
 }
 

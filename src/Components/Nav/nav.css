@@ -1,0 +1,66 @@
+.navbar{
+    display: flex;
+    width: 1280px;
+    /* padding: 12px 80px; */
+    margin:0px 80px;
+    align-items: center;
+    position: absolute;
+    gap: 300px;
+}
+
+.navbar_container{
+    display: flex;
+    padding: 16px 24px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+    border-radius: 8px;
+    background: var(--initial-palette-white);
+    box-shadow: 0px 4px 23px 0px rgba(18, 77, 143, 0.12);
+}
+
+.innovate_us{
+    display: flex;
+    align-items: flex-start;
+    /* margin-right: 840px; */
+}
+
+.innovate_us .innovate{
+    color: var(--initial-palette-blue600);
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.innovate_us .us{
+    color: var(--initial-palette-yellow200);
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.menu_options nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu_options nav a{
+    color: var(--initial-palette-blue600);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; 
+}
+
+.menu_options nav a:link{
+    text-decoration: none;
+}
+
+
+
