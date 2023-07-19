@@ -1,11 +1,11 @@
 .navbar{
     display: flex;
-    width: 1280px;
-    /* padding: 12px 80px; */
-    margin:0px 80px;
+    width: calc(100% - 160px);
+    /* width: 1440px; */
+    padding: 12px 80px;
     align-items: center;
-    position: absolute;
     gap: 300px;
+    position: absolute;
 }
 
 .navbar_container{
@@ -22,7 +22,7 @@
 .innovate_us{
     display: flex;
     align-items: flex-start;
-    /* margin-right: 840px; */
+    /* margin-right: 801px; */
 }
 
 .innovate_us .innovate{
@@ -43,13 +43,13 @@
     line-height: 100%;
 }
 
-.menu_options nav{
+.menu_options{
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.menu_options nav a{
+.menu_options a{
     color: var(--initial-palette-blue600);
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
